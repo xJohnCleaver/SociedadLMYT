@@ -1,0 +1,27 @@
+Estas son las credenciales de acceso al servidor:
+  - Servidor > ra.inf.uct.cl
+  - Usuario > rafael
+  - Contraseña > integracion2019*
+  - Puerto de conexión > 22
+ 
+Métodos de conexión al servidor:
+1.  Conexión por ssh mediante consola o terminal > ssh rafael@ra.inf.uct.cl -p 22
+    Password: integracion2019*
+    
+    Acceder al directorio de trabajo mediante comandos:
+    cd www/
+    cd fichas/
+    
+2.  Conexión mediante software Filezilla Client > debajo de la barra de herramientas indicar los datos señalados anteriormente.
+
+    Acceder al directorio de trabajo mediante Filezilla Client:
+    Desplazarse hacia el directorio "fichas" ubicado en directorio "www".
+
+Personalmente la recomendación es trabajar con Filezilla Client para cargar los archivos al servidor, esto en caso de no
+tener buen manejo de la terminal o consola.
+
+
+REGLAS: (Ninguna es exclusiva de sanción)
+1.  Únicamente trabajar en el directorio que se señala, no ingresar hacia archivos o directorios indebidos propios del sistema.
+2.  NO cambiar credenciales de acceso.
+3.  Todos deben colaborar en el desarrollo del proyecto y cumplir con sus tareas.
