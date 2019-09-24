@@ -1,0 +1,29 @@
+.container{
+	margin:0 auto;
+	text-align: center;
+	width: 80%;
+}
+
+.box{
+	display: inline-block;
+	margin: 80px;
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;
+	width: 150px;
+}
+
+#caja1,#caja2{
+	border: 1px solid #333;
+	height: 150px;
+	width: 100%;
+}
+
+img{
+	width: 100%;
+}
+
+.detectar{
+	background: #ddd;
+	border: 3px dashed #aaa !important;
+}

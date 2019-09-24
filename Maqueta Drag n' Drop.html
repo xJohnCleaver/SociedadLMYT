@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test Drag and drop </title>
+	<link rel="stylesheet"  href="estilo.css">
+	<script>
+		
+		function allowDrop(event){
+		event.preventDefault()
+		document.getElementById("caja2").classList.add("detectar")
+		}
+		function drag(event){
+			event.dataTransfer.setData("text",event.target.id)
+			document.getElementById("parrafo1").innerHTML = "Posicione el elemento en el cuadro de descripción" ;
+		}
+		function drop(event){
+		event.preventDefault()
+		var data = event.dataTransfer.getData("text")
+		event.target.appendChild(document.getElementById(data))
+
+		document.getElementById("parrafo1").innerHTML = "sample1" ;
+
+		document.getElementById("caja2").classList.remove("detectar")
+		document.getElementById("drag1").setAttribute("draggable","false")
+		}
+	</script>
+	<script type="text/javascript">
+		function cambiatexto(){
+			var sample1 = "lorem ipsum";
+			var sample2 = "uwu";
+			
+		}
+	</script>
+</head>
+<body>
+<div class="container">
+<div class="box">
+	<h3>sintomas</h3>
+	<div class="img" id="caja1">
+		<img id="drag1" src="test.png" draggable="true" ondragstart="drag(event)">
+	</div>
+</div>
+<div class="box">
+	<h3>descripción</h3>
+	<div class="img" id="caja2" ondrop="drop(event)" ondragover="allowDrop(event)">
+	</div>
+</div>
+</div>
+<div>
+<h3 id="parrafo1">el loco se va a morir</h3>
+</div>
+</body>
+</html>
