@@ -1,3 +1,6 @@
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,14 +15,14 @@
 /*presentacion de hoja  */
 #header{
     height: 15%;
-    background: #444444;
+    background: #fdcac0;
     border-radius: 1em;
     margin: 1em;
 }
 /*Muestra de navegador */
 #nav{
     height: 10%;
-    background: #444444;
+    background: #fdcac0;
     border-radius: 1em;
     margin: 1em;
 }
@@ -32,7 +35,7 @@
 /*Muestra de Hoja */
 #footer{
     height: 15%;
-    background: #444444;
+    background: #fdcac0;
     border-radius: 1em;
     margin: 1em;
 }
@@ -40,7 +43,7 @@
 #section {
     height: 100%;
     width: 29%;
-    background: #444444;
+    background: #fdcac0;
     border-radius: 1em;    
     float: right;
     
@@ -49,7 +52,7 @@
 #aside{
     height: 100%;
     width: 70%;
-    background: #444444;
+    background: #fdcac0;
     border-radius: 1em;    
     float: left;       
 }

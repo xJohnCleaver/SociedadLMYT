@@ -8,17 +8,120 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="diseno.css">
 
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but proyectolmyt doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+  
+      <div class="boton-login">
+        <button type="button" class="btn btn-large btn-pink mr-2" data-toggle="modal" data-target="#miModal">
+            Login
+        </button>
+        <button type="button" class="btn btn-large btn-pink mr-2" data-toggle="modal" data-target="#myModal">
+                Regístrate
+        </button></section>
     <div id="contenedor">
-      <div id="header"> Header</div>
+      <div id="header">
+          
+              Header
+      </div>
+      </div>
       <div id="nav"> Navegador</div>
+      <section>
+        
+<!--boton de login-->
+
+
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+              <div class="modal-body">
+            <div class="card-body">
+                      <form class="form-horizontal" action="login.php" method="POST" novalidate>
+                              <h3>Acceder</h3>
+                          <fieldset class="form-group position-relative has-icon-left">
+                              <input type="text" class="form-control" id="user-name" name="email"  placeholder="Usuario" required>
+                              <div class="form-control-position">
+                                  <i class="ft-user"></i>
+                              </div>
+                          </fieldset>
+                          <fieldset class="form-group position-relative has-icon-left">
+                              <input type="password" class="form-control" id="user-password" name="pass" placeholder="Contraseña" required>
+                              <div class="form-control-position">
+                                  <i class="la la-key"></i>
+                              </div>
+                          </fieldset>
+                          <div class="form-group row">
+                              <div class="col-sm-6 col-12 text-center text-sm-left pr-0">
+                                  <fieldset>
+                                      <input type="checkbox" id="remember-me" class="chk-remember">
+                                      <label for="remember-me" name="recordar"> Recuérdame</label>
+                                  </fieldset>
+                              </div>
+                              <div class="col-sm-6 col-12 float-sm-left text-center text-sm-right"><a href="recovery_password.php" class="card-link">Recuperar Contraseña</a></div>
+                          </div>
+                          <button type="submit"  class="btn btn-outline-info btn-block">Login</button>
+                      </form>
+                  </div>			
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="myModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <div class="card-body">                        
+              <form class="form-horizontal" action="registrar-usuario.php" method="POST">
+                                  <h3>Crea una cuenta</h3>
+                              <fieldset class="form-group position-relative has-icon-left">
+                                  <input type="text" class="form-control"  placeholder="Nombres" name="nombres" required>
+                                  <div class="form-control-position">
+                                      <i class="ft-user"></i>
+                                  </div>
+                              </fieldset>
+                <fieldset class="form-group position-relative has-icon-left">
+                                  <input type="text" class="form-control"  placeholder="Apellidos" name="apellidos" required>
+                                  <div class="form-control-position">
+                                      <i class="ft-user"></i>
+                                  </div>
+                              </fieldset>
+                
+                              <fieldset class="form-group position-relative has-icon-left">
+                                  <input type="email" class="form-control" placeholder="Correo eletrónico" name="email" required>
+                                  <div class="form-control-position">
+                                      <i class="ft-mail"></i>
+                                  </div>
+                              </fieldset>
+                              <fieldset class="form-group position-relative has-icon-left">
+                                  <input type="password" class="form-control" placeholder="Contraseña" name="password" required>
+                                  <div class="form-control-position">
+                                      <i class="la la-key"></i>
+                                  </div>
+                              </fieldset>
+                              <div class="form-group row">
+                                  <div class="col-sm-6 col-12 text-center text-sm-left pr-0">
+                                      <fieldset>
+                                          <input type="checkbox" id="remember-me" class="chk-remember">
+                                          <label for="remember-me"> Recuérdame</label>
+                                      </fieldset>
+                                  </div>
+                              </div>
+                              <button type="submit" class="btn btn-outline-info btn-block"><i class="ft-user"></i> Registrar</button>
+                          </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  
+      
       <div id="contenido">
         <div id="section"> herramienta</div>          
         <div id="aside"> hojas</div>
